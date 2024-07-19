@@ -1,0 +1,123 @@
+:root {
+  --color-nutmeg: hsl(30, 70%, 40%);
+  --color-wenge-brown: hsl(24, 45%, 25%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(30, 54%, 90%);
+  margin: 0;
+  padding: 0;
+  color: hsl(24, 5%, 18%);
+}
+
+main {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.recipe-header img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.recipe-header h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 24px;
+  color: hsl(332, 51%, 32%);
+}
+
+.recipe-header p {
+  font-size: 16px;
+}
+
+.recipe-details h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+  margin-top: 20px;
+}
+
+.recipe-details ul,
+.recipe-details ol {
+  padding-left: 20px;
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+}
+
+.recipe-details ul li,
+.recipe-details ol li {
+  margin-bottom: 10px;
+}
+
+/* Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive design */
+@media (min-width: 1440px) {
+  main {
+    max-width: 600px;
+    padding: 40px;
+  }
+
+  .recipe-header h1 {
+    font-size: 32px;
+  }
+
+  .recipe-header p,
+  .recipe-details ul li,
+  .recipe-details ol li {
+    font-size: 18px;
+  }
+
+  .nutrition {
+    margin-top: 1.5rem;
+  }
+
+  .nutrition h2 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    color: var(--color-nutmeg);
+    font-size: 1.7rem;
+  }
+
+  .nutrition p {
+    font-weight: 400;
+    font-size: 1rem;
+    width: 20rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .nutrition table {
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+    padding-left: 1rem;
+    border-collapse: collapse;
+  }
+
+  .nutrition td {
+    color: var(--color-wenge-brown);
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .value-nutrition {
+    color: var(--color-nutmeg);
+  }
+
+  th, td {
+    border-bottom: 1px solid hsla(30, 10%, 34%, 0.5); 
+    padding: 8px;
+  }
+}
